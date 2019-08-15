@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ZooBug</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+
+</head>
+<body>
+    
+   <div id="header"> </div>
+   <form>
+     <input type="button" value="BACK" onclick="history.back()">
+   </form>
+           
+    <div class="container">
+    
+    <center><h1>PROFILE EDITOR</h1><center>
+
+    <p><label for="name">Display Name :</label>
+    <input type="text" placeholder="Display Name" name="name" value="" required></p>
+
+    <p><label for="name">First name :</label>
+    <input type="text" placeholder="First name" name="name" value="" required></p>
+
+    <p><label for="name">Last name :</label>
+    <input type="text" placeholder="Last Name" name="name" value="" required></p>
+
+    <p><label for="age">Age : </label>
+    <input type="number" min="18" max="99" name="age" value="" style="color: black!important" required></p>
+
+    <p><label for="gender">Gender : </label>
+     <p>
+        <input type="radio" name="gender" value="M">Male
+        <input type="radio" name="gender" value="F">Female</p>
+                        
+     </p>
+    
+    <p><label for="name">Email :</label>
+    <input type="text" placeholder="Email" name="email" value="" required></p>
+
+    <p><label for="orientation">AREAS :</label>
+      <p>
+          <input type="radio" name="orientation" value="M" checked>DEV
+          <input type="radio" name="orientation" value="M">TESTING
+          <input type="radio" name="orientation" value="M">FINANCE
+          <input type="radio" name="orientation" value="M">ADMIN
+      </p></p>
+
+      <p><label for="bio">Your TITTLE :</label>
+      <input type="text" placeholder="Your TITTLE" name="name" value="" maxlength="200" required></p>
+
+      <p><label>Interest : </label><br>
+        <p style="color: black!important">
+            <input minlength="2" type="text" id="seed_one" name="i1" value="">
+            <input minlength="2" type="text" id="seed_two" name="i2" value="">
+            <input minlength="2" type="text" id="seed_three" name="i3" value="">
+        </p></p>
+
+        <p><center><input type="submit" class="btn btn-primary" name="submit" value="update"></center>
+        <left><input type="submit" class="btn btn-primary" name="submit" value="CANCEL"></left></p>
+
+  </div>
+</form>
+
+  <script language="Javascript"> 
+
+  $("#header").load("header.csp"); 
+  //$("#footer").load("footer.csp"); 
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+</head>
+<body>
+
+<div id="header"> </div>
+<form>
+     <input type="button" value="BACK" onclick="history.back()">
+</form>
+  
+<form action="allissues.csp">
+  <div class="container">
+      <form class="example" action="/actionpage.php" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="Search.." name="search.csp">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+
+          <div class="row">
+                <div class="col-25">
+                  <label for="country">ISSUE ID:</label>
+                </div>
+                <div class="col-75">
+                  <select id="ID" name="ISSUE ID:">
+                    <option value="#1P1">#1P1</option>
+                    <option value="#1P2">#1P2</option>
+                    <option value="#1P3">#1P3</option>
+                    <option value="#1P4">#1P4</option>
+                  </select>
+                </div>
+              </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">SUMMARY</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+            <div class="col-25">
+              <label for="lname">ISSUE TYPE</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="ISSUE TYPE" placeholder="Issue type...">
+            </div>
+          </div>
+
+    <div class="row">
+            <div class="col-25">
+              <label for="country">ASSIGN TO:</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="ASSIGN TO:">
+                <option value="ADMIN">ADMIN</option>
+                <option value="MANAGER">MANAGER</option>
+              </select>
+            </div>
+          </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="country">SEVERITY</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="SEVERITY">
+          <option value="australia">CRITICAL</option>
+          <option value="canada">MAJOR</option>
+          <option value="usa">MODERATE</option>
+          <option value="usa">LOW</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+            <div class="col-25">
+              <label for="country">PRIORITY</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="PRIORITY">
+                <option value="australia">CRITICAL</option>
+                <option value="canada">HIGH</option>
+                <option value="usa">MEDIUM</option>
+                <option value="usa">LOW</option>
+              </select>
+            </div>
+          </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">DISCRIPTION</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+            <div class="col-25">
+              <label for="ADD FILE">ADD FILE</label>
+            </div>
+            <div class="col-75">
+              <input type="file" name="myFile">
+              <input type="submit" value="Upload" name="submit">
+            </div>
+        </div>
+
+    <div class="row">
+      <button class="button1" id="buttonnew" onclick="location.href = 'allissues.csp'" tabindex="5">cancel</button>
+     <button type="submit" name="btn" value="allissues.csp" tabindex="5">SAVE</button>
+    </div>
+  </div>
+</form>
+
+<script language="Javascript"> 
+
+  $("#header").load("header.csp"); 
+  //$("#footer").load("footer.csp"); 
+
+</script> 
+</body>
+</html>

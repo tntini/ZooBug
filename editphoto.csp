@@ -1,0 +1,50 @@
+<html>
+	<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+
+</head>
+<body>
+<div id="header"> </div>
+<form>
+     <input type="button" value="BACK" onclick="history.back()">
+   </form>
+
+<div class="container">
+	<div class="login">
+				<div class="img">
+		       <div style="position: relative; top: 5%; color: black; z-index: 2;">
+					    <center><h1>No file selected</h1></center>
+					    	<center>
+					      	<form class="form-group" method="POST" action="editphoto.csp" enctype="multipart/form-data">
+						        <label for="icone">File (JPG | 5 Mo) :</label> 
+						        <input type="hidden" name="MAXFILESIZE" value="5242880" />
+						        <input type="file" name="myfile" id="myfile" /><br><br>
+						        <input class="btn-commenta" type="submit" name="submit" value="Upload" />
+					      	</form><br>
+						    </center>
+					     <br><br>
+					   <center>
+					   	<br><br>
+					  	<a href="profile.csp"><input type="submit" class="btn btn-primary" value="Save"></a>
+				  	</center>
+		      </div>
+      	</div>
+			</div>
+   </div>
+</div>
+
+<script language="Javascript">
+
+  $("#header").load("header.csp"); 
+  //$("#footer").load("footer.csp"); 
+
+</script> 
+</body>
+</html>

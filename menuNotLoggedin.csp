@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ZooBug</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="header">
+  <h1>ZOOBUG</h1>
+  <p>"DEFECT TRACKING SYSTEM"</p>
+</div>
+<div class="navbar">
+  <a href="Login.csp">Login</a>
+  <a href="Register.csp">Register</a>
+</div>
+
+</body>
+</html>

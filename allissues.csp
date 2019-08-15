@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ZooBug</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+</head>
+<body>
+
+    <div id="header"> </div>
+    <form>
+     <input type="button" value="BACK" onclick="history.back()">
+   </form>
+
+    <center><h1>summary issues</h1></center>
+       <center><button class="button" id="buttonnew" onclick="location.href = 'addnewissue.csp'" tabindex="5">ADD NEW ISSUE</button></center><br>
+
+       <form class="example" action="/actionpage.php" style="margin:auto;max-width:300px">
+         <input type="text" placeholder="Search.." name="search.csp">
+         <button type="submit"><i class="fa fa-search"></i></button>
+       </form>
+
+       <center><button class="button" id="buttonnew" onclick="location.href = 'status.csp'" tabindex="5">status</button></center><br>
+       
+
+<p></p>
+
+<div class="row">
+  <div class="column">
+    <div class="card1">
+      <h3>TODO</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card2">
+      <h3>INPROGRESS</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card3">
+      <h3>CLOSED</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card4">
+      <h3>RE-OPEN</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+</div><br>
+<div class="row">
+        <div class="column">
+          <div class="card1">
+            <h3>TODO</h3>
+            <p>Some text</p>
+            <p>Some text</p>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card2">
+            <h3>INPROGRESS</h3>
+            <p>Some text</p>
+            <p>Some text</p>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card3">
+            <h3>CLOSED</h3>
+            <p>Some text</p>
+            <p>Some text</p>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card4">
+            <h3>RE-OPEN</h3>
+            <p>Some text</p>
+            <p>Some text</p>
+          </div>
+        </div>
+      </div><br>
+      <div class="row">
+            <div class="column">
+              <div class="card1">
+                <h3>TODO</h3>
+                <p>Some text</p>
+                <p>Some text</p>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card2">
+                <h3>INPROGRESS</h3>
+                <p>Some text</p>
+                <p>Some text</p>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card3">
+                <h3>CLOSED</h3>
+                <p>Some text</p>
+                <p>Some text</p>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card4">
+                <h3>RE-OPEN</h3>
+                <p>Some text</p>
+                <p>Some text</p>
+              </div>
+            </div>
+          </div>
+
+<script language="Javascript">
+
+  $("#header").load("header.csp"); 
+  //$("#footer").load("footer.csp"); 
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ZooBug</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="header">
+  <h1>ZOOBUG</h1>
+  <p>"DEFECT TRACKING SYSTEM"</p>
+</div>
+<div class="navbar">
+  <a href="menuLoggedin.csp">Home</a>
+  <a href="allissues.csp">Issues</a>
+  <a href="stats.csp">Stats</a>
+  <a href="#">Testing</a>
+  <a href="profile.csp">View Profile</a>
+</div>
+
+</body>
+</html>

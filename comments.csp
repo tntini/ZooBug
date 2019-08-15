@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+
+</head>
+<body>
+    
+<div id="header"> </div>
+<form>
+  <input type="button" value="BACK" onclick="history.back()"></form>
+
+   <div class="login">
+    <div class="container"style="position: relative; width:111%; top: -20%; z-index: 2; height: 100%; font-family: Arial">
+        <div class="commentbox">
+            <div class="contact_list">
+            Users
+            </div>
+            <div class="comment_message_list" style="top: 5%;left:30%; width: 69%;">
+                <div id="msg">
+                </div>
+                <br>
+            </div>
+            <div class="comment_message_box" tyle="width:70%; height:800%; border-radius:10px; top:-60%; right:-1%;">
+            Message
+            </div>
+            <center>
+            <form>
+                <input id="text" type="text" name="message" class="form-control" minlength="5" maxlength="70" placeholder="max 70 ...">
+                <right><input id="send" type="submit" class="btn btn-primary" name="send" value="Send"></right>
+                <input id="cid" type="text" name="cid" style="display: hidden; border: 0; width: 0; height: 0; border-radius: 0; background-color: transparent;" value="<?php echo $idu; ?>">  
+            </form></center>
+        </div>
+    </div>
+  </div>
+
+<script language="Javascript"> 
+
+  $("#header").load("header.csp"); 
+  //$("#footer").load("footer.csp"); 
+      function goBack()
+      {
+      window.history.back();
+      }
+
+</script> 
+
+</body>
+</html>

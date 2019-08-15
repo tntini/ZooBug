@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ZooBug</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+
+</head>
+<body>
+  
+    <div id="header"> </div>
+    <form>
+     <input type="button" value="BACK" onclick="history.back()">
+   </form>
+
+
+<table class="tableA">
+  <tr>
+    <td id="statsbycatergory"> </td>
+    <td id="statsbyassignment"> </td>
+  </tr>
+  <tr>
+    <td id="statsbystatus"> </td>
+    <td id="statsbypriority"> </td>
+  </tr>
+</table>
+
+<script> 
+
+  $("#statsbycatergory").load("statsbycatergory.csp"); 
+  $("#statsbyassignment").load("statsbyassignment.csp"); 
+  $("#statsbystatus").load("statsbystatus.csp"); 
+  $("#statsbypriority").load("statsbypriority.csp"); 
+
+
+</script> 
+
+<script language="Javascript">
+
+  $("#header").load("header.csp"); 
+  //$("#footer").load("footer.csp"); 
+
+</script> 
+
+</body>
+</html>

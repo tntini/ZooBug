@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ZooBug</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+
+
+</head>
+<body>
+
+<div id="header"> </div>
+
+<form>
+  <input type="button" value="BACK" onclick="history.back()">
+</form>
+     
+<form action="menuLoggedin.csp">
+  <div class="container">
+        <p><label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+        </p>
+    
+        <p>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+        </p>
+        <button type="submit" name="btn" value="Login" tabindex="5">LOGIN</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+  </div>
+  <div class="container">
+
+        <button class="button" id="buttonnew" onclick="location.href = 'Register.csp'" tabindex="5">REGISTER</button>
+        <span class="psw">FORGOT <a href="forgotu.csp">PASSWORD?</a></span>
+  </div>
+</form>
+<script language="Javascript">
+
+  $("#header").load("header.csp");
+  
+   
+  //$("#footer").load("footer.csp"); 
+
+</script> 
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+
+ <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
+
+</head>
+<body>
+  
+  <div id="header"> </div>
+   <form>
+     <input type="button" value="BACK" onclick="history.back()">
+   </form>
+
+  <header>
+
+      <button class="button" id="buttonnew" onclick="location.href = 'allissues.csp'" tabindex="5">ASSIGNED ALL</button>
+      <button class="button" id="buttonnew" onclick="location.href = 'allissues.csp'" tabindex="5">STATUS ALL</button>
+      <button class="button" id="buttonnew" onclick="location.href = 'allissues.csp'" tabindex="5">TYPE ALL</button>
+      <button class="button" id="buttonnew" onclick="location.href = 'users'" tabindex="5">ASSIGN</button>
+      <form class="example" action="/actionpage.php" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="Search.." name="search.csp">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <button class="button" id="buttonnew" onclick="location.href = 'comments.csp'" tabindex="5">COMMENTS</button>
+      <button class="button" id="buttonnew" onclick="location.href = 'allissues.csp'" tabindex="5">RE-OPEN</button>
+    </header>
+
+<div class="row">
+  <div class="column1" style="background-color:#aaa;">
+    <h2>Order by Severity</h2>
+    <div class="col-75">
+        <select id="Assignment" name="Assignment">
+          <option value="Critical">CRITICAL</option>
+          <option value="High">HIGH</option>
+          <option value="Medium">MEDIUM</option>
+          <option value="Low">LOW</option>
+        </select>
+      </div>
+      <br>
+      
+    <p>Some text..</p>
+  </div>
+
+  <div class="column2" style="background-color:#bbb;">
+    <h2>DETAILS</h2>
+    <div class="row">
+        <div class="col-25">
+          <label for="lname">ISSUE TYPE</label>
+        </div>
+        <div class="col-75">
+            <p>Type</p><input type="text" id="lname" name="ISSUE TYPE" placeholder="Issue type...">
+            <p>Status</p><input type="text" id="lname" name="STATUS" placeholder="eg. closed">
+            <p>Priority</p><input type="text" id="lname" name="PRIORITY" placeholder="eg. High">
+            <p>Severity</p><input type="text" id="lname" name="SEVERITY" placeholder="eg. Major">
+            <p>Resolution</p><input type="text" id="lname" name="RESOLUTION" placeholder="fixed">
+        </div>
+
+      </div>
+      <div class="row">
+          <div class="col-25">
+            <label for="ADD FILE">ADD FILE</label>
+          </div>
+          <div class="col-75">
+            <input type="file" name="myFile">
+            <input type="submit" value="Upload" name="submit">
+            <input type="text" id="lname" name="ISSUE TYPE" placeholder="URL...">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-25">
+            <label for="subject">DISCRIPTION:</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:80px"></textarea>
+          </div>
+        </div>
+  </div>
+
+  <div class="column3" style="background-color:#ccc;">
+    <h2>PEOPLE</h2>
+    
+    <div class="col-75">
+        <p>ASSIGNEE..</p>
+        <select id="ASSIGNEE" name="ASSIGNEE">
+          <option value="ADMIN">ADMIN</option>
+          <option value="MANAGER">MANAGER</option>
+        </select>
+      </div>
+
+      <br>
+
+      <div class="col-75">
+      <p>REPORTER</p>   
+      <select id="REPORTER" name="REPORTER">
+          <option value="Critical">DEV</option>
+          <option value="High">TESTING</option>
+          <option value="Medium">FINANCE</option>
+          <option value="Low">ADMIN</option>
+        </select>
+      </div>
+      
+      <br>
+
+      <div class="row">
+          <div class="col-25">
+            <label for="subject">DATE CREATED</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="2019/03/15" style="height:30px"></textarea>
+          </div>
+        </div>
+        
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-25">
+              <label for="subject">DATE UPDATED</label>
+            </div>
+            <br>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="2019/03/15" style="height:30px"></textarea>
+            </div>
+          </div>
+      
+    <p>Some text..</p>
+  </div>
+</div>
+
+<script language="Javascript">
+
+  $("#header").load("header.csp"); 
+  //$("#footer").load("footer.csp"); 
+
+</script> 
+
+</body>
+</html>

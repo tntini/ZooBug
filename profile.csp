@@ -1,0 +1,51 @@
+<html>
+	<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+
+</head>
+<body>
+        <div id="header"> </div>
+    <form>
+     <input type="button" value="BACK" onclick="history.back()">
+   </form>
+
+<div class="container">
+    <center><a href="profileeditor.csp"><input class="btn btn-primary" type="submit" name="Edit" value="Edit Profile" style="position: absolute; z-index: 9999999999999; left: 0"></a>
+                <a href="editphoto.csp"><input class="btn btn-primary" type="submit" name="EditPhoto" value="Edit Photo" style="position: absolute; z-index: 9999999999999; left: 110px"></a></center>
+    <div class="left-container">
+        <div class="MainPhoto">
+            <img src="#" width="100%" title="profileimg" alt="profileimg">
+        </div>
+    </div>
+        <div class="infos-container">
+                <h4><span class="class">Display name : Thembalethu</span> <span ></span></h4> 
+                <h4><span class="class">Name : Thembalethu</span> <span ></span></h4><h4><span class="class">Lastname : Ntini</span> <span ></span></h4>
+                <h4><span class="class">AGE :</span> <span ></span></h4>
+                <h4><span class="class">Email : thembalethu.ntini@gmail.com</span> <span ></span></h4>
+                <h4><span class="class">Gender :</span> <span ></span></h4>
+                <h4><span class="class">AREA :</span> <span ></span></h4>
+            <h4><span class="class">Tittle :</span></h4>
+            <textarea class="form-control" disabled></textarea>
+            <br>
+            <h4><span class="class">Interest :</span> <span class="htag">#</span><span></span>
+                <span class="htag">#</span><span></span>
+                <span class="htag">#</span><span></span></h4>
+        </div>
+    </div>
+    </div>
+
+<script language="Javascript">
+
+  $("#header").load("header.csp"); 
+  //$("#footer").load("footer.csp"); 
+
+</script> 
+</body>
+</html>
